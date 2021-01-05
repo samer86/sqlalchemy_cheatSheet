@@ -96,14 +96,3 @@ x = samer.select('select * where name =="One"')
 ins = samer.update().where(samer.c.id==4).values(name='TWO',lastname=100)
 conn = engine.connect()
 row_id = conn.execute(ins).lastrowid # will insert data and return the last row id! 
-
-for i in df_out.iloc:
-    # print(i)
-    for d in i:
-        print(d)
-        
-
-
-
-
-
